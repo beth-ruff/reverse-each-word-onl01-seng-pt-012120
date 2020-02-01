@@ -9,8 +9,9 @@ end
 
 def reverse_each_word(sentence2)
   newer_sentence = sentence2.split
+  array = []
   newer_sentence.collect do |stringling|
-    stringling.reverse
+    array << stringling.reverse
   end
-  newer_sentence.join(" ")
+  array.join(" ")
 end
